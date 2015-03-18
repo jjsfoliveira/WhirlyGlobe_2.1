@@ -7,9 +7,6 @@
 [submodule "third-party/clipper"]
 	path = third-party/clipper
 	url = https://github.com/mousebird/clipper
-[submodule "third-party/eigen"]
-	path = third-party/eigen
-	url = https://github.com/mousebird/eigen
 [submodule "third-party/proj-4"]
 	path = third-party/proj-4
 	url = https://github.com/mousebird/proj-4
