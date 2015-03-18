@@ -222,7 +222,7 @@ Eigen::Quaternionf QuatFromTwoVectors(const Point3f &a,const Point3f &b)
     //  1 (vectors are nearly identical) and -1
     
     Vector3f axis = v0.cross(v1);
-    float s = internal::sqrt((1.f+c)*2.f);
+    float s = sqrt((1.f+c)*2.f);
     float invs = 1.f/s;
     ret.vec() = axis * invs;
     ret.w() = s * 0.5f;

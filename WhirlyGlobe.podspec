@@ -11,14 +11,13 @@ Pod::Spec.new do |s|
 
   s.platform	 = :ios, '5.0'
 
-  s.xcconfig = {'USER_HEADER_SEARCH_PATHS' => "${PODS_ROOT}/eigen/"}
+  s.xcconfig = {'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/" "${PODS_ROOT}/boost/" "${PODS_ROOT}/clipper/"' }
   
   s.requires_arc = true
 
   s.subspec 'Headers' do |headers|
     headers.source_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/**/*.h"
     headers.public_header_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/*.h"
-    
 
     headers.dependency 'eigen'
     headers.dependency 'boost/shared_ptr-includes'

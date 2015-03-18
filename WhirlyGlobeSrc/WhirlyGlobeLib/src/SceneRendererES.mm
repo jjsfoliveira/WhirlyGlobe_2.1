@@ -85,7 +85,7 @@ bool matrixAisSameAsB(Matrix4f &a,Matrix4f &b)
 		frameCount = 0;
 		framesPerSec = 0.0;
         numDrawables = 0;
-		frameCountStart = nil;
+		frameCountStart = 0;
         zBufferMode = zBufferOn;
         doCulling = true;
         clearColor.r = 0.0;  clearColor.g = 0.0;  clearColor.b = 0.0;  clearColor.a = 1.0;
