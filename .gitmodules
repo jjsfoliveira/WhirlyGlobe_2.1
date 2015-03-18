@@ -3,7 +3,7 @@
 	url = https://github.com/AFNetworking/AFNetworking
 [submodule "third-party/boost"]
 	path = third-party/boost
-	url = https://github.com/mousebird/boost
+url=https://github.com/mousebird/boost/tree/v1.51.0
 [submodule "third-party/clipper"]
 	path = third-party/clipper
 	url = https://github.com/mousebird/clipper
