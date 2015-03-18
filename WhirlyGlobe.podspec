@@ -42,6 +42,6 @@ Pod::Spec.new do |s|
     sp.frameworks = 'UIKit', 'QuartzCore', 'OpenGLES'
   end
 
-  s.xcconfig = {'USER_HEADER_SEARCH_PATHS' => '${PODS_ROOT}/eigen'}
+  s.xcconfig = {'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/"'}
 
 end
