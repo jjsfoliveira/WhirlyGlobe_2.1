@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
     headers.source_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/**/*.h"
     headers.public_header_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/*.h"
 
+    headers.dependency 'eigen'
     headers.dependency 'boost/shared_ptr-includes'
     headers.dependency 'boost/pointer_cast-includes'
     headers.dependency 'boost/math-includes'
