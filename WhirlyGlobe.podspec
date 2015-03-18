@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform	 = :ios, '5.0'
 
-  s.xcconfig = {'USER_HEADER_SEARCH_PATHS' => "${PODS_ROOT}/eigen/"}
+  s.xcconfig = {'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/eigen/"}
   
   s.requires_arc = true
 
