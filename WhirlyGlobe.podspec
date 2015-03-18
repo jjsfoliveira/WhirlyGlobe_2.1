@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.subspec 'Headers' do |headers|
     headers.source_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/**/*.h"
     headers.public_header_files = "WhirlyGlobeSrc/{WhirlyGlobeLib,WhirlyGlobe-MaplyComponent}/include/*.h"
+    headers.xcconfig = {'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/"'}
 
     headers.dependency 'eigen'
     headers.dependency 'boost/shared_ptr-includes'
@@ -42,6 +43,5 @@ Pod::Spec.new do |s|
     sp.frameworks = 'UIKit', 'QuartzCore', 'OpenGLES'
   end
 
-  s.xcconfig = {'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/"'}
 
 end
