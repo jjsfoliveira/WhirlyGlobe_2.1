@@ -16,3 +16,6 @@
 [submodule "resources"]
 	path = resources
 	url = https://github.com/mousebird/wg-resources
+[submodule "third-party/eigen"]
+	path = third-party/eigen
+	url = https://github.com/mousebird/eigen
