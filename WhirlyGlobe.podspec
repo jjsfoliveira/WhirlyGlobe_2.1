@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform	 = :ios, '5.0'
 
-  s.xcconfig = {'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/" "${PODS_ROOT}/boost/" "${PODS_ROOT}/clipper/"' }
+  s.xcconfig = {'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/eigen/" "${PODS_ROOT}/boost/" "${PODS_ROOT}/clipper/"', 'GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS': "__USE_SDL_GLES__ __IPHONEOS__" }
   
   s.requires_arc = true
 
